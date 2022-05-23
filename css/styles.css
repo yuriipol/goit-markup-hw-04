@@ -116,7 +116,6 @@ body {
 .mail,
 .tel {
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 /* Добавление иконок */
