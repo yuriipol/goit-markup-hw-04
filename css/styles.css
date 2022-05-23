@@ -122,13 +122,17 @@ body {
   width: 16px;
   height: 12px;
   margin-right: 10px;
-  align-items: center;
+  fill: var(--title-text-color);
 }
 .icon-tel {
   width: 10px;
   height: 16px;
   margin-right: 10px;
-  align-items: center;
+  fill: var(--title-text-color);
+}
+.icon-mail:hover,
+.icon-tel:hover {
+  fill: var(--accent-color);
 }
 
 /* .mail::before {
@@ -258,7 +262,7 @@ body {
   background-color: #f5f4fa;
   border-radius: 4px;
   /* background-image: url('../images/antenna.svg'); */
-  background-size: contain;
+  /* background-size: contain; */
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -314,6 +318,7 @@ body {
   display: flex;
 }
 .team-list-card {
+  background-color: #fff;
   text-align: center;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -349,11 +354,13 @@ body {
   display: flex;
   margin: 0;
   padding: 0;
+  background-color: #fff;
 }
 .network-item {
   width: 44px;
   height: 44px;
-  outline: 1px solid tomato;
+  border-radius: 50%;
+  /* outline: 1px solid tomato; */
 }
 .network-item:not(:last-child) {
   margin-right: 10px;
@@ -361,6 +368,15 @@ body {
 .icon-network {
   width: 44px;
   height: 44px;
+  padding: 12px;
+  fill: #afb1b8;
+}
+.icon-network:hover {
+  fill: var(--primary-white-color);
+}
+.network-item:hover {
+  fill: var(--primary-white-color);
+  background-color: var(--accent-color);
 }
 /* Style our clients */
 .clients {
@@ -385,6 +401,10 @@ body {
   width: 106px;
   height: 60px;
   margin: 16px 32px;
+  fill: #afb1b8;
+}
+.icon-clients:hover {
+  fill: var(--accent-color);
 }
 /*Style footer*/
 .footer {
@@ -447,7 +467,9 @@ body {
 .social-list-items {
   width: 44px;
   height: 44px;
-  outline: 1px solid tomato;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  /* outline: 1px solid tomato; */
 }
 .social-list-items:not(:last-child) {
   margin-right: 10px;
@@ -464,6 +486,11 @@ body {
 .icon {
   width: 44px;
   height: 44px;
+  padding: 12px;
+  fill: var(--primary-white-color);
+}
+.social-list-items:hover {
+  background-color: var(--accent-color);
 }
 /*Style porfolio*/
 .work-section {
