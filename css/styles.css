@@ -431,7 +431,8 @@ body {
   height: 60px;
   fill: #afb1b8;
 }
-.icon-clients:hover {
+.icon-clients:hover,
+.icon-clients:focus {
   fill: var(--accent-color);
 }
 /*Style footer*/
@@ -517,7 +518,8 @@ body {
   padding: 12px;
   fill: var(--primary-white-color);
 }
-.social-list-items:hover {
+.social-list-items:hover,
+.social-list-items:focus {
   background-color: var(--accent-color);
 }
 /*Style porfolio*/
