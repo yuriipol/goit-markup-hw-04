@@ -257,18 +257,19 @@ body {
 .peculiarities-item:not(:last-child) {
   margin-right: 30px;
 }
-.peculiarities-item::before {
+/* Добавление иконок svg с помощью псевдоэлемента before
+как background-image */
+/* .peculiarities-item::before {
   display: block;
   content: '';
   height: 120px;
   margin-bottom: 30px;
   background-color: #f5f4fa;
-  border-radius: 4px;
-  /* background-image: url('../images/antenna.svg'); */
-  /* background-size: contain; */
-  background-repeat: no-repeat;
-  background-position: center;
-}
+  border-radius: 4px; */
+/* background-size: contain; на весь блок */
+/* background-repeat: no-repeat;
+  background-position: center; */
+/* }
 .peculiarities-item.attention::before {
   background-image: url('../images/antenna.svg');
 }
@@ -280,8 +281,25 @@ body {
 }
 .peculiarities-item.technology::before {
   background-image: url('../images/astronaut.svg');
+} */
+/* Конец  */
+/* 2-й вариант для иконок svg */
+.peculiarities-item-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
+.icon-peculiarities {
+  padding: 25px 100px;
+  margin-bottom: 30px;
+  background-color: #f5f4fa;
+}
+.icon-item-peculiarities {
+  width: 70px;
+  height: 70px;
+}
+/* Конец */
 .title {
   padding: 0;
   margin: 0;
@@ -394,6 +412,7 @@ body {
 .clients-list-item {
   width: 170px;
   height: 92px;
+  padding: 16px 32px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
@@ -403,7 +422,6 @@ body {
 .icon-clients {
   width: 106px;
   height: 60px;
-  margin: 16px 32px;
   fill: #afb1b8;
 }
 .icon-clients:hover {
