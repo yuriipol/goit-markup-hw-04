@@ -115,7 +115,9 @@ body {
 }
 .mail,
 .tel {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /* Добавление иконок */
 .icon-mail {
@@ -184,6 +186,7 @@ body {
 .contacts.list .tel:focus {
   color: var(--accent-color);
 }
+
 /* Style main content*/
 /* Style section Hero */
 .hero {
