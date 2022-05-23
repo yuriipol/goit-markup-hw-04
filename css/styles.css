@@ -501,8 +501,7 @@ body {
 
 .social-icons {
   display: flex;
-  justify-content: baseline;
-  align-items: center;
+  align-items: baseline;
 }
 .social-links.list {
   display: flex;
