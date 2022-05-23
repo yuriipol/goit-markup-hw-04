@@ -132,10 +132,10 @@ body {
   margin-right: 10px;
   fill: var(--title-text-color);
 }
-.icon-mail:hover,
+/* .icon-mail:hover,
 .icon-tel:hover {
   fill: var(--accent-color);
-}
+} */
 
 /* .mail::before {
   display: inline-block;
@@ -178,9 +178,17 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+.contacts.list .mail:hover .icon-mail,
+.contacts.list .mail:focus .icon-mail {
+  fill: var(--accent-color);
+}
 .contacts.list .mail:hover,
 .contacts.list .mail:focus {
   color: var(--accent-color);
+}
+.contacts.list .tel:hover .icon-tel,
+.contacts.list .tel:focus .icon-tel {
+  fill: var(--accent-color);
 }
 .contacts.list .tel:hover,
 .contacts.list .tel:focus {
